@@ -1,1 +1,1 @@
-# code_wars_practice
+This is a repository for a CodeWars.com practice code
