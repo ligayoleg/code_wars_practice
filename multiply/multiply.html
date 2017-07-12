@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiply Challenge | Kata Wars</title>
+</head>
+<body>
+	<h2>Multiply Challenge</h2>
+	<h3>Kata Wars | 8 Kyu</h3>
+
+	<div id = "output">
+		
+	</div>
+
+	<script>
+		var message = '';
+		var a = parseInt(prompt ('Give me a number.'));
+		var b  = parseInt(prompt ('Give me another number.'));
+		var c = a *b;
+			
+		function print(message) {
+			var outputDiv = document.getElementById('output');
+			outputDiv.innerHTML = message;
+
+		}
+
+			
+		message += '<p>The result of multiplying ' + a + ' and ' + b +' is: ' + c + '</p>'
+		print(message) ;  
+	 
+
+	</script>
+</body>
+</html>
