@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Treehouse JavaScript Challenge | Questions</title>
+</head>
+<body>
+	<h1>Question Challenge | Treehouse Javascript</h1>
+
+	<p id = "output"></p>
+
+
+	<script>
+		// 		Ask at least five questions
+
+		// Keep track of the number of questions the user answered correctly
+
+		// Provide a final message after the quiz letting the user know the number of questions he or she got right.
+
+		// Rank the player. If the player answered all five correctly, give that player the gold crown: 3-4 is a silver crown; 1-2 correct answers is a bronze crown and 0 correct is no crown at all.
+
+
+		var questions = [
+			[prompt('How many states in USA?'),'50'],
+			[prompt('How many colors in rainbow?'),'6'],
+			[prompt('What year did Napoleon lost the battle of Waterloo?'),'1815'],
+			[prompt('How many inches in one foot'),'12'],
+			[prompt('How many feet in one yard'),'3'],
+		];
+		
+		var correctAnswers = 0;
+		var wrongAnswers = 0;
+		var result = '';
+		// Conditionals to check for right answers
+		for (i = 0; i < questions.length; i += 1 ){
+			if (question[i][0] == questions[i][1]){
+				correctAnswers += 1;
+			} else {
+				wrongAnswers += 1;
+			}
+		}
+		// Conditional to calculate the place
+		if (correctAnswers = 5) {
+				document.write('<p> I give you a golden crown and a first place!</p>')
+			}else if (correctAnswers >= 3){
+				document.write( '<p> I give you a silver crown and a ssecond place </p>')
+			} else if (correctAnswers >= 1){
+				document.write ( '<p> I give a bronse crown and a third place</p>')
+			} else{
+				document.write( '<p> You get no crown and a last place</p>')
+			}
+
+	</script>
+</body>
+</html>
